@@ -10,7 +10,6 @@ import { RouterModule } from '@angular/router';
 import { EffectsModule } from '@ngrx/effects';
 import { StoreModule } from '@ngrx/store';
 import { StoreDevtoolsModule } from '@ngrx/store-devtools';
-import { environment } from 'src/environments/environment';
 import { NombreCursoPipeModule } from 'src/app/shared/pipes/nombre-curso.pipe';
 import { NombreEstudiantePipeModule } from 'src/app/shared/pipes/nombre-estudiante.pipe';
 

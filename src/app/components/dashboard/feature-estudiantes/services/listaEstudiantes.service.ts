@@ -2,7 +2,7 @@ import { EstudiantesLista } from 'src/app/shared/interfaces/estudiantes';
 import { Injectable } from '@angular/core';
 import { HttpClient } from '@angular/common/http';
 import { map, Observable, Subject, tap } from 'rxjs';
-import { environment } from 'src/environments/environment';
+
 import { Inscripciones } from 'src/app/shared/interfaces/inscripciones';
 
 @Injectable({
@@ -10,7 +10,6 @@ import { Inscripciones } from 'src/app/shared/interfaces/inscripciones';
 })
 export class ListaEstudiantesService {
   inscripcionSubject = new Subject<any>();
-  URL_SERVICIOS = environment.URL_SERVICIOS;
 
   listaEstudiantes =
     'https://62af7944b0a980a2ef40b08d.mockapi.io/campus/v1/estudiantes/';
